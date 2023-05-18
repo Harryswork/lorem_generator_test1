@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorem Text Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Lorem Text Generator</h1>
+    <form action="generate_text.rb" method="POST">
+      <label for="wordCount">Word Count:</label>
+      <input type="number" id="wordCount" name="wordCount" min="1" required>
+
+      <label for="paragraphCount">Paragraph Count:</label>
+      <input type="number" id="paragraphCount" name="paragraphCount" min="1" required>
+
+      <label for="listCount">List Count:</label>
+      <input type="number" id="listCount" name="listCount" min="1" required>
+
+      <button type="submit">Generate</button>
+    </form>
+  </div>
+</body>
+</html>
